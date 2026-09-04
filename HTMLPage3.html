@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlo Vera — Formación y Estudios</title>
+
+    <!-- FUENTES GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ---------- VARIABLES DE COLOR ---------- */
+        :root {
+            --bg: #FAFAF7;
+            --text: #1B2430;
+            --muted: #5C6672;
+            --accent: #2D6A6A; /* Verde azulado para links y detalles */
+            --accent-2: #E4572E; /* Naranja para el rol principal */
+            --border: #DCD9CF;
+        }
+
+        /* ---------- RESETEO BÁSICO ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.15;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        section {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 5rem 1.5rem;
+        }
+
+        /* ---------- NAVEGACIÓN ---------- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+            nav .logo {
+                font-family: 'Space Grotesk', sans-serif;
+                font-weight: 700;
+                color: var(--text);
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 1.5rem;
+            }
+
+            nav a {
+                color: var(--text);
+                font-size: 0.95rem;
+            }
+
+        /* ---------- HERO ---------- */
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            max-width: 14ch;
+        }
+
+        .hero .role {
+            color: var(--accent-2);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .hero p {
+            margin-top: 1.5rem;
+            color: var(--muted);
+            max-width: 55ch;
+        }
+
+        /* ---------- BLOQUES DE ESTUDIOS ---------- */
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .estudio {
+            display: block;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+        }
+
+            .estudio:last-child {
+                border-bottom: 1px solid var(--border);
+            }
+
+        .estudio-titulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+            .estudio-titulo span {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.8rem;
+                color: var(--accent);
+            }
+
+        .estudio p {
+            color: var(--muted);
+            margin-top: 0.6rem;
+            max-width: 60ch;
+        }
+
+        .estudio ul {
+            margin-top: 0.8rem;
+            margin-left: 1.2rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .estudio li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ---------- HABILIDADES / TAGS ---------- */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.7rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+            background: #FFFFFF;
+        }
+
+        /* ---------- CONTACTO Y NAVEGACIÓN VOLVER ---------- */
+        .volver-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="portfolio.html" class="logo">Carlo Vera (SUNT4G)</a>
+        <ul>
+            <li><a href="portfolio.html#proyectos">Proyectos</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#idiomas">Idiomas</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+        <h1>Formación Académica & Idiomas</h1>
+        <p class="role">Bachillerato Tecnológico & Certificaciones de Idiomas</p>
+        <p>
+            Mi trayectoria académica combina una sólida base en ciencias tecnológicas e ingeniería
+            con una acreditada competencia lingüística internacional.
+        </p>
+    </section>
+
+    <!-- SECCIÓN FORMACIÓN ACADÉMICA -->
+    <section id="estudios">
+        <p class="section-label">// trayectoria académica</p>
+        <h2>Estudios Reglados</h2>
+
+        <!-- BACHILLERATO -->
+        <div class="estudio">
+            <div class="estudio-titulo">
+                Bachillerato Científico - Tecnológico
+                <span>Modalidad Ciencia y Tecnología</span>
+            </div>
+            <p>
+                Formación enfocada en la resolución analítica de problemas, fundamentos de ingeniería, física y matemáticas aplicadas.
+            </p>
+            <ul>
+                <li><strong>Matemáticas II & Física:</strong> Cálculo, álgebra lineal, geometría analítica y física mecánica/electromagnetismo.</li>
+                <li><strong>Tecnología e Ingeniería:</strong> Principios de electrónica, sistemas de control, circuitos y procesos informáticos.</li>
+                <li><strong>Dibujo Técnico:</strong> Geometría descriptiva, normalización y visión espacial.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECCIÓN IDIOMAS -->
+    <section id="idiomas">
+        <p class="section-label">// acreditaciones lingüísticas</p>
+        <h2>Competencia en Idiomas</h2>
+
+        <!-- INGLÉS C2 -->
+        <div class="estudio">
+            <div class="estudio-titulo">
+                Inglés — Nivel C2
+                <span>Maestría / Dominio Nativo</span>
+            </div>
+            <p>
+                Acreditación de dominio absoluto del idioma (CEFR C2 / Proficient). Capacidad completa para comunicar ideación técnica compleja, redactar documentación avanzada y mantener fluidez profesional o académica en cualquier entorno.
+            </p>
+        </div>
+
+        <!-- ALEMÁN A1 -->
+        <div class="estudio">
+            <div class="estudio-titulo">
+                Alemán — Nivel A1
+                <span>Acceso / Elemental</span>
+            </div>
+            <p>
+                Certificación de nivel básico. Comprensión de estructuras gramaticales esenciales, vocabulario cotidiano, expresiones de uso frecuente e interacción básica en situaciones estructuradas.
+            </p>
+        </div>
+
+        <!-- OTROS IDIOMAS / RESUMEN -->
+        <div class="estudio">
+            <div class="estudio-titulo">
+                Otras Lenguas
+                <span>Conocimientos Adicionales</span>
+            </div>
+            <p>
+                Estudios complementarios en otras lenguas como el Francés, facilitando la adaptación a documentación y entornos multiculturales.
+            </p>
+        </div>
+
+        <a href="portfolio.html" class="volver-btn">← Volver al Portfolio principal</a>
+    </section>
+
+    <footer>
+        Carlo Vera — Formación & Certificaciones
+    </footer>
+
+</body>
+</html>
