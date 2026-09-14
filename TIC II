@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carlo Vera — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ---------- VARIABLES DE COLOR ---------- */
+        :root {
+            --bg: #FAFAF7;
+            --text: #1B2430;
+            --muted: #5C6672;
+            --accent: #2D6A6A; /* verde azulado, para links y detalles */
+            --accent-2: #E4572E; /* naranja, para el acento fuerte */
+            --border: #DCD9CF;
+        }
+
+        /* Reseteo básico: quitamos márgenes por defecto del navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.15;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        section {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 5rem 1.5rem;
+        }
+
+        /* ---------- NAVEGACION ---------- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+            nav .logo {
+                font-family: 'Space Grotesk', sans-serif;
+                font-weight: 700;
+                color: var(--text);
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 1.5rem;
+            }
+
+            nav a {
+                color: var(--text);
+                font-size: 0.95rem;
+            }
+
+        /* ---------- HERO ---------- */
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            max-width: 14ch;
+        }
+
+        .hero .role {
+            color: var(--accent-2);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .hero p {
+            margin-top: 1.5rem;
+            color: var(--muted);
+            max-width: 55ch;
+        }
+
+        /* ---------- PROYECTOS ---------- */
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .proyecto {
+            display: block;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border);
+        }
+
+            .proyecto:last-child {
+                border-bottom: 1px solid var(--border);
+            }
+
+        .proyecto-titulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+            .proyecto-titulo span {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.8rem;
+                color: var(--accent);
+            }
+
+        .proyecto p {
+            color: var(--muted);
+            margin-top: 0.4rem;
+            max-width: 60ch;
+        }
+
+        .proyecto ul {
+            margin-top: 0.5rem;
+            margin-left: 1.2rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* ---------- HABILIDADES ---------- */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.7rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+            background: #FFFFFF;
+        }
+
+        /* ---------- CONTACTO ---------- */
+        .contacto a {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .contacto ul {
+            list-style: none;
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
