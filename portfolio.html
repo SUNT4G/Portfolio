@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Carlo Vera — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=stylesheet" rel="stylesheet">
 
     <style>
         /* ---------- VARIABLES DE COLOR ---------- */
@@ -138,6 +137,14 @@
             max-width: 60ch;
         }
 
+        .proyecto-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
         .proyecto ul {
             margin-top: 0.5rem;
             margin-left: 1.2rem;
@@ -206,11 +213,10 @@
     <!-- ===== SECCIÓN 1: HERO (presentación) ===== -->
     <section class="hero">
         <h1>Hola, soy Carlo Vera.</h1>
-        <p class="role">En esta pagina es donde muestro mis distintos projectos y habilidades. Y donde tambien comparto mi proceso de aprendizaje y futuras ambiciones.</p>
+        <p class="role">En esta página es donde muestro mis distintos proyectos y habilidades. Y donde también comparto mi proceso de aprendizaje y futuras ambiciones.</p>
         <p>
             Este es mi espacio donde muestro lo que voy construyendo,
             desde mis primeras páginas en HTML hasta proyectos más grandes.
-
             Bienvenido/a a mi portfolio.
         </p>
     </section>
@@ -219,6 +225,19 @@
     <section id="proyectos">
         <p class="section-label">// proyectos destacados</p>
         <h2>Lo que he construido y mantengo</h2>
+
+        <!-- Proyecto Nightstand App con enlaces -->
+        <div class="proyecto">
+            <div class="proyecto-titulo">
+                Nightstand (Aplicación de Software)
+                <span>Itch.io / App</span>
+            </div>
+            <p>Desarrollo y distribución pública de una aplicación funcional orientada al usuario final, gestionando su ciclo de vida y empaquetado.</p>
+            <div class="proyecto-links">
+                <a href="https://sunt4g.itch.io/nightstand" target="_blank">→ Descargar en Itch.io</a>
+                <a href="https://github.com/SUNT4G/NightStand" target="_blank">→ GitHub Oficial</a>
+            </div>
+        </div>
 
         <div class="proyecto">
             <div class="proyecto-titulo">
@@ -245,25 +264,29 @@
                 Taller de Sistemas y Hardware
                 <span>Montaje / Mantenimiento / Diagnosis</span>
             </div>
-            <p>Servicio de montaje a medida de torres PC, mantenimiento preventivo/correctivo de portátiles (sustitución de RAM, SSD, gestión térmica) y resolución de fallos de hardware y software.</p>
+            <p>Servicio de montaje a medida de torres PC, mantenimiento preventivo/correctivo de portátiles y resolución de fallos de hardware y software.</p>
         </div>
     </section>
 
     <!-- ===== SECCIÓN 3: HABILIDADES ===== -->
     <section id="Portfolio">
-        <p class="section-label">// Portfolio</p>
-        <h2>Con que herramientas he trabajado y un pequeño resumen de lo que soy capaz</h2>
+        <p class="section-label">// habilidades & idiomas</p>
+        <h2>Con qué herramientas he trabajado y un resumen de lo que soy capaz</h2>
         <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
-            <span class="tag">También tengo fluidez en idiomas, teniendo a dia de hoy un Certificado de nivel nativo C2 en ingles y distintos otros certificados en Aleman</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Linux / Servidores</span>
+            <span class="tag">Hardware & Ensamblaje</span>
+            <span class="tag">Inglés C2 (Nativo)</span>
+            <span class="tag">Alemán A1</span>
         </div>
     </section>
 
     <!-- ===== SECCIÓN 4: CONTACTO ===== -->
     <section id="contacto" class="contacto">
         <p class="section-label">// contacto</p>
-        <h2>Calquier duda o propuesta no duden en contactarme</h2>
+        <h2>Cualquier duda o propuesta no duden en contactarme</h2>
         <p style="color: var(--muted); margin-top: 0.5rem;">
             ¿Quieres saber más de mis proyectos o simplemente saludar?
         </p>
