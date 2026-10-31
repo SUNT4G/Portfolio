@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -140,6 +140,14 @@
             max-width: 60ch;
         }
 
+        .proyecto-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
         .proyecto ul {
             margin-top: 0.8rem;
             margin-left: 1.2rem;
@@ -214,8 +222,8 @@
     <section class="hero">
         <h1>Proyectos</h1>
         <p>
-            Este es mi espacio donde muestro lo que voy construyendo, desde infraestructura
-            doméstica autoalojada y redes privadas hasta desarrollo web accesible y mantenimiento de hardware.
+            Este es mi espacio donde muestro lo que voy construyendo, desde aplicaciones de software
+            e infraestructura doméstica autoalojada hasta desarrollo web accesible y mantenimiento de hardware.
         </p>
     </section>
 
@@ -224,11 +232,30 @@
         <p class="section-label">// proyectos destacados</p>
         <h2>Lo que he construido y mantengo</h2>
 
-        <!-- PROYECTO 1 -->
+        <!-- PROYECTO 1: NIGHTSTAND APP -->
+        <div class="proyecto">
+            <div class="proyecto-titulo">
+                Nightstand (Aplicación de Software)
+                <span>Itch.io / Desktop App</span>
+            </div>
+            <p>
+                Desarrollo, empaquetado y distribución pública de una aplicación de software funcional orientada al usuario final, gestionando su ciclo de vida y control de versiones.
+            </p>
+            <ul>
+                <li><strong>Despliegue y Distribución:</strong> Publicación en la plataforma Itch.io para su descarga pública directa.</li>
+                <li><strong>Código Fuente:</strong> Control de versiones estructurado y mantenido públicamente en GitHub.</li>
+            </ul>
+            <div class="proyecto-links">
+                <a href="https://sunt4g.itch.io/nightstand" target="_blank">→ Descargar en Itch.io</a>
+                <a href="https://github.com/SUNT4G/NightStand" target="_blank">→ Repositorio GitHub</a>
+            </div>
+        </div>
+
+        <!-- PROYECTO 2 -->
         <div class="proyecto">
             <div class="proyecto-titulo">
                 Homelab Personal & Infrastructure
-                <span>Tailscale / Jellyfin / Docker / Linux</span>
+                <span>Tailscale / Jellyfin</span>
             </div>
             <p>
                 Diseño, despliegue y administración integral de un servidor doméstico enfocado en privacidad, seguridad y autonomía de datos.
@@ -239,21 +266,21 @@
             </ul>
         </div>
 
-        <!-- PROYECTO 2 -->
+        <!-- PROYECTO 3 -->
         <div class="proyecto">
             <div class="proyecto-titulo">
                 Desarrollo Web Responsive
-                <span>HTML5 / CSS3 / JavaScript Vanilla</span>
+                <span>HTML5 / CSS3</span>
             </div>
             <p>
-                Creación y maquetación de proyectos web priorizando el rendimiento nativo, accesibilidad (a11y) y diseño semanticamente limpio.
+                Creación y maquetación de proyectos web priorizando el rendimiento nativo, accesibilidad (a11y) y diseño semánticamente limpio.
             </p>
             <ul>
                 <li><strong>Estructuración Modular:</strong> Desarrollo de páginas corporativas, catálogos interactivos y portfolios dinámicos con HTML semántico.</li>
             </ul>
         </div>
 
-        <!-- PROYECTO 3 -->
+        <!-- PROYECTO 4 -->
         <div class="proyecto">
             <div class="proyecto-titulo">
                 Taller de Sistemas & Hardware
@@ -272,9 +299,10 @@
 
     <!-- SECCIÓN HABILIDADES -->
     <section id="Portfolio">
-        <p class="section-label">// Habilidades</p>
+        <p class="section-label">// Habilidades & Idiomas</p>
         <h2>Herramientas con las que trabajo</h2>
         <div class="tags">
+            <span class="tag">Desarrollo de Software / Apps</span>
             <span class="tag">HTML5 / CSS3</span>
             <span class="tag">JavaScript</span>
             <span class="tag">Tailscale VPN</span>
